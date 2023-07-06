@@ -58,8 +58,8 @@ const initialState = {
 const todos = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:
-      console.log('added' + JSON.stringify(action.payload))
-      console.log('state' + JSON.stringify(state.todos))
+      // console.log('added' + JSON.stringify(action.payload))
+      // console.log('state' + JSON.stringify(state.todos))
       return {
         ...state,
         todos: state.todos.concat(action.payload)
